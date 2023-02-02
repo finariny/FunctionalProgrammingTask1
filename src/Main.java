@@ -9,8 +9,9 @@ public class Main {
         String string = scanner.nextLine();
 
         String[] arrayOfWords = string.split(" +");
+        Set<String> arrayWithoutDuplicates = new HashSet<>(Arrays.asList(arrayOfWords));
 
-        System.out.println("В тексте " + arrayOfWords.length + " слов");
+        System.out.println("В тексте " + arrayWithoutDuplicates.size() + " слов");
 
         System.out.println("TOP " + numberOfTopWords + ":");
 
